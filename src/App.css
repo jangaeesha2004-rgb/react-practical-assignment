@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f1f4f8;
+  color: #1f2937;
+}
+
+#root {
+  width: 100%;
+}
+
+.app {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 25px 30px;
+}
+
+/* Header */
+
+.header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.subtitle {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #6366f1;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 42px;
+  color: #111827;
+}
+
+.description {
+  max-width: 650px;
+  margin: 15px auto 0;
+  color: #6b7280;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Assignment cards */
+
+.assignment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.assignment-card {
+  display: flex;
+  gap: 25px;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.number {
+  min-width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef2ff;
+  color: #4f46e5;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.content {
+  flex: 1;
+}
+
+.content h2 {
+  margin: 5px 0 8px;
+  font-size: 22px;
+  color: #111827;
+}
+
+.task-description {
+  margin: 0 0 22px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* Demo areas */
+
+.demo-area {
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+.status-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Buttons */
+
+button {
+  border: none;
+  border-radius: 7px;
+  padding: 10px 17px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+/* Todo */
+
+.todo-area {
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+input {
+  padding: 11px 13px;
+  width: 260px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #6366f1;
+}
+
+li {
+  margin: 12px 0;
+  color: #374151;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .app {
+    padding: 30px 15px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .assignment-card {
+    flex-direction: column;
+    padding: 22px;
+  }
+
+  .number {
+    width: 50px;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
